@@ -1,18 +1,18 @@
 // Your code here
 
 
-    var questionsArr = [
-       {question: 'Javascript is the best language?', answer: true},
-       {question: 'JS is slowly starting to click?', answer: true},
-       {question: 'JS is fun to learn?', answer: true},
-       {question: 'JS gives me a headache sometimes?', answer: true},
-       {question: 'JS sometimes goes smooth, like maybe TOO SMOOTH.', answer: true},
-       {question: 'Sometimes you wait for the impending doom of a code crash', answer: true}
+var questionsArr = [
+    { question: 'Javascript is the best language?', answer: true },
+    { question: 'JS is slowly starting to click?', answer: true },
+    { question: 'JS is fun to learn?', answer: true },
+    { question: 'JS gives me a headache sometimes?', answer: true },
+    { question: 'JS sometimes goes smooth, like maybe TOO SMOOTH.', answer: true },
+    { question: 'Sometimes you wait for the impending doom of a code crash', answer: true }
 
 
-    ]
+]
 
-    function runQuiz() {
+function runQuiz() {
     var total = questionsArr.length;
     var trueCount = 0;
     var falseCount = 0;
@@ -29,11 +29,9 @@
     }
 
     const percentage = Math.round((trueCount / total) * 100);
-    
-    alert("You answered correctly to " + percentage + '%' + ' of the questions.')
 
+    alert('You answered ' + percentage + '% of questions correctly.')
+    console.log(typeof percentage)
 
-console.log(typeof questionsArr); // Should log 'undefined' outside runQuiz()
-
-    }
-runQuiz();
+}
+runQuiz()

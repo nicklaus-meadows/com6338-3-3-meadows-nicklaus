@@ -12,6 +12,8 @@ var questionsArr = [
 
 ]
 
+
+
 function runQuiz() {
     var total = questionsArr.length;
     var trueCount = 0;
@@ -28,10 +30,20 @@ function runQuiz() {
         }
     }
 
-    const percentage = Math.round((trueCount / total) * 100);
+    let percentage = Math.round((trueCount / total) * 100);
+
+
+
+
 
     alert('You answered ' + percentage + '% of questions correctly.')
-    console.log(typeof percentage)
+
+    console.log(questionsArr, trueCount, falseCount, percentage)
+
+
+
+
 
 }
+
 runQuiz()

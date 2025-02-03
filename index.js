@@ -1,6 +1,6 @@
 // Your code here
 
-function runQuiz() {
+
     var questionsArr = [
        {question: 'Javascript is the best language?', answer: true},
        {question: 'JS is slowly starting to click?', answer: true},
@@ -12,6 +12,7 @@ function runQuiz() {
 
     ]
 
+    function runQuiz() {
     var total = questionsArr.length;
     var trueCount = 0;
     var falseCount = 0;
@@ -27,7 +28,12 @@ function runQuiz() {
         }
     }
 
-    var percentage = Math.round((trueCount / total) * 100);
+    const percentage = Math.round((trueCount / total) * 100);
     
     alert("You answered correctly to " + percentage + '%' + ' of the questions.')
-}
+
+
+console.log(typeof questionsArr); // Should log 'undefined' outside runQuiz()
+
+    }
+runQuiz();

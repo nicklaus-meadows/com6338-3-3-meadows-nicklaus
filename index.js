@@ -13,7 +13,7 @@ var questionsArr = [
 ]
 
 
-
+debugger
 function runQuiz() {
     var total = questionsArr.length;
     var trueCount = 0;
@@ -38,7 +38,7 @@ function runQuiz() {
 
     alert('You answered ' + percentage + '% of questions correctly.')
 
-    console.log(questionsArr, trueCount, falseCount, percentage)
+    console.log(questionsArr, trueCount, falseCount, percentage, typeof percentage)
 
 
 
